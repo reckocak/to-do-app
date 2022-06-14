@@ -83,7 +83,7 @@ const createSilButon = () => {
 
       toplam -= 1 ; 
       document.querySelector("#total").innerHTML = toplam;
-      if (yapilan > 0){
+      if (yapilan > 0&& sil.parentNode.classList.contains("checked")){
         yapilan -= 1;
         document.querySelector("#ok").innerHTML = yapilan;
       }
