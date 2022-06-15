@@ -13,7 +13,11 @@ document.querySelector("#todo-button").addEventListener("click", () => {
  
       if (!listeInput.value) {
     alert("Please Enter your listes");
-  } else {
+  } 
+  else if(liste.includes(listeInput.value))
+  return;
+  
+    else {
     liste.push(listeInput.value);
     console.log(liste);
     showListe();
